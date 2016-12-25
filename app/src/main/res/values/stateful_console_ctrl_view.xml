@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<item name="retry" type="id"/>
+
+	<string name="no_connection">No connection.</string>
+	<string name="reconnecting">Reconnecting…</string>
+
+</resources>

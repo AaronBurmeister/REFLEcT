@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/file_chooser_new_directory"
+			android:layout_toStartOf="@id/file_chooser_new_directory"
+			android:background="#1fff">
+
+			<TextView
+				android:id="@id/file_chooser_path"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/file_chooser_up"
+				android:layout_toStartOf="@id/file_chooser_up"
+				android:ellipsize="middle"
+				android:maxLines="1"
+				android:padding="@dimen/path_padding"
+				android:scrollHorizontally="true"
+				android:singleLine="true"
+				android:textAppearance="?android:textAppearanceMedium"/>
+
+			<de.ab.fontawesome.FontAwesomeButton
+				android:id="@id/file_chooser_up"
+				style="?android:buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:text="@string/fa_arrow_left"/>
+
+		</RelativeLayout>
+
+		<de.ab.fontawesome.FontAwesomeButton
+			android:id="@id/file_chooser_new_directory"
+			style="?android:buttonBarButtonStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text="@string/fa_folder"/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:id="@id/file_chooser_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottom"
+		android:layout_below="@+id/top"/>
+
+	<RelativeLayout
+		android:id="@+id/bottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<EditText
+			android:id="@id/file_chooser_filename"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/file_chooser_ok"
+			android:layout_toStartOf="@id/file_chooser_ok"
+			android:hint="@string/file_name"/>
+
+		<Button
+			android:id="@id/file_chooser_ok"
+			style="?android:buttonBarButtonStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text="@string/ok"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

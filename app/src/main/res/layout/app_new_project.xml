@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:id="@+id/directory"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/select_directory"
+			android:layout_toStartOf="@+id/select_directory"
+			android:hint="@string/remote_directory_path"
+			android:maxLines="1"
+			android:scrollHorizontally="true"
+			android:singleLine="true"/>
+
+		<de.ab.fontawesome.FontAwesomeButton
+			android:id="@+id/select_directory"
+			style="?android:buttonBarButtonStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text="@string/fa_folder_open"/>
+
+	</RelativeLayout>
+
+	<EditText
+		android:id="@+id/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/title"
+		android:maxLines="1"
+		android:scrollHorizontally="true"
+		android:singleLine="true"/>
+
+</LinearLayout>

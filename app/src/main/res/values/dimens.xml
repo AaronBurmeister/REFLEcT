@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="group_margin">20dp</dimen>
+	<dimen name="group_container">10dp</dimen>
+	<dimen name="group_offset">30dp</dimen>
+	<dimen name="group_offset_sm">15dp</dimen>
+	<dimen name="group_margin_sm">10dp</dimen>
+	<dimen name="fa_offset">10dp</dimen>
+	<dimen name="fa_width">40dp</dimen>
+	<dimen name="offset">5dp</dimen>
+	<dimen name="title_offset">15dp</dimen>
+	<dimen name="item_offset">10dp</dimen>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:padding="@dimen/item_offset">
+
+	<TextView
+		android:id="@+id/project_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ellipsize="end"
+		android:maxLines="1"
+		android:singleLine="true"
+		android:textAppearance="?android:textAppearanceMedium"/>
+
+	<TextView
+		android:id="@+id/dir_path"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ellipsize="middle"
+		android:maxLines="1"
+		android:singleLine="true"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:shape="rectangle">
+
+	<solid android:color="#2fff"/>
+
+	<padding
+		android:bottom="@dimen/group_offset"
+		android:left="@dimen/group_offset"
+		android:right="@dimen/group_offset"
+		android:top="@dimen/group_offset"/>
+
+	<stroke
+		android:width="@dimen/group_margin"
+		android:color="#0000"/>
+
+</shape>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/open_with"
+        android:title="@string/open_with"/>
+	
+	<item
+		android:id="@+id/pull"
+		android:title="@string/pull"/>
+	
+	<item
+		android:id="@+id/push"
+		android:title="@string/push"/>
+	
+	<item
+		android:id="@+id/export"
+		android:title="@string/export"/>
+	
+	<item
+		android:id="@+id/close"
+		android:title="@string/close"/>
+    
+</menu>

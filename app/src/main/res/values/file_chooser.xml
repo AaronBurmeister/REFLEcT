@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<dimen name="path_padding">20dp</dimen>
+
+	<item name="file_chooser_loader" type="id"/>
+	<item name="file_chooser_path" type="id"/>
+	<item name="file_chooser_up" type="id"/>
+	<item name="file_chooser_new_directory" type="id"/>
+	<item name="file_chooser_list" type="id"/>
+	<item name="file_chooser_filename" type="id"/>
+	<item name="file_chooser_ok" type="id"/>
+
+</resources>
