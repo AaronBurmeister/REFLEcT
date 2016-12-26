@@ -5,7 +5,7 @@ android {
 	buildToolsVersion "25.0.0"
 
 	defaultConfig {
-		applicationId "de.ab.ssh.fedit"
+		applicationId "de.ab.reflect"
 		minSdkVersion 14
 		targetSdkVersion 25
 		versionCode 1

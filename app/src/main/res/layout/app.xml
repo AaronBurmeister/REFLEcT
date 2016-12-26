@@ -7,13 +7,13 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
 
-		<de.ab.ssh.fedit.console.ConsoleView
+		<de.ab.reflect.console.ConsoleView
 			android:id="@+id/stdout"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_above="@+id/stdin"/>
 
-		<de.ab.ssh.fedit.console.StatefulConsoleCtrlView
+		<de.ab.reflect.console.StatefulConsoleCtrlView
 			android:id="@+id/stdin"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
 
 		</RelativeLayout>
 
-		<de.ab.ssh.fedit.ProjectView
+		<de.ab.reflect.ProjectView
 			android:id="@+id/project"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

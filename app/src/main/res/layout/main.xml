@@ -133,21 +133,40 @@
 					android:checked="false"
 					android:text="@string/enable_auth"/>
 
-				<android.support.design.widget.TextInputLayout
+				<RelativeLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
-					<EditText
-						android:id="@+id/auth"
+					<android.support.design.widget.TextInputLayout
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:hint="@string/auth"
-						android:inputType="textUri"
-						android:maxLines="1"
-						android:scrollHorizontally="true"
-						android:singleLine="true"/>
+						android:layout_centerVertical="true"
+						android:layout_toLeftOf="@+id/auth_select"
+						android:layout_toStartOf="@+id/auth_select">
 
-				</android.support.design.widget.TextInputLayout>
+						<EditText
+							android:id="@+id/auth"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:hint="@string/auth"
+							android:inputType="textUri"
+							android:maxLines="1"
+							android:scrollHorizontally="true"
+							android:singleLine="true"/>
+
+					</android.support.design.widget.TextInputLayout>
+
+					<de.ab.fontawesome.FontAwesomeButton
+						android:id="@+id/auth_select"
+						style="?android:buttonBarButtonStyle"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:text="@string/fa_folder_open"/>
+
+				</RelativeLayout>
 
 				<CheckBox
 					android:id="@+id/passphrase_enabled"
@@ -173,21 +192,39 @@
 
 				</android.support.design.widget.TextInputLayout>
 
-				<android.support.design.widget.TextInputLayout
+				<RelativeLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
-					<EditText
-						android:id="@+id/known_hosts"
+					<android.support.design.widget.TextInputLayout
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:hint="@string/known_hosts"
-						android:inputType="textUri"
-						android:maxLines="1"
-						android:scrollHorizontally="true"
-						android:singleLine="true"/>
+						android:layout_toLeftOf="@+id/known_hosts_select"
+						android:layout_toStartOf="@+id/known_hosts_select">
 
-				</android.support.design.widget.TextInputLayout>
+						<EditText
+							android:id="@+id/known_hosts"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:hint="@string/known_hosts"
+							android:inputType="textUri"
+							android:maxLines="1"
+							android:scrollHorizontally="true"
+							android:singleLine="true"/>
+
+					</android.support.design.widget.TextInputLayout>
+
+					<de.ab.fontawesome.FontAwesomeButton
+						android:id="@+id/known_hosts_select"
+						style="?android:buttonBarButtonStyle"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:text="@string/fa_folder_open"/>
+
+				</RelativeLayout>
 
 			</LinearLayout>
 
